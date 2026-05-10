@@ -2,13 +2,25 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Truck, RefreshCw, Shield, Headphones } from "lucide-react";
 import ProductCard from "../components/ProductCard";
-
+import headimage from "../assets/main-furniture.jpg";
+import furniture1 from "../assets/furniture1.jpg";
+import Lighting1 from "../assets/Lighting1.jpg";
+import Texttiles1 from "../assets/Texttiles1.jpg";
+import Decor1 from "../assets/Decor1.jpg";
+import Ceramic1 from "../assets/Ceramic1.jpg";
+import Oaktable1 from "../assets/Oaktable1.webp";
+import Linenthrow1 from "../assets/Linenthrow1.jpg";
+import Pendantlamp1 from "../assets/Pendantlamp1.jpg";
+import Woolarearug from "../assets/Woolarearug.webp";
+import Modularsofa from "../assets/Modularsofa.jpg";
+import AbstractCanvas from "../assets/AbstractCanvas.jpg";
+import FloorLamp from "../assets/FloorLamp.jpg";
 // Mock Data
 const featuredCategories = [
-  { name: "Furniture", img: "https://picsum.photos/seed/furn/400/400" },
-  { name: "Lighting", img: "https://picsum.photos/seed/light/400/400" },
-  { name: "Textiles", img: "https://picsum.photos/seed/text/400/400" },
-  { name: "Decor", img: "https://picsum.photos/seed/decor/400/400" },
+  { name: "Furniture", img: `${furniture1}` },
+  { name: "Lighting", img: `${Lighting1}` },
+  { name: "Textiles", img: `${Texttiles1}` },
+  { name: "Decor", img: `${Decor1}` },
 ];
 
 const newArrivals = [
@@ -16,7 +28,7 @@ const newArrivals = [
     id: 1,
     name: "Ceramic Vase",
     price: 45,
-    image: "https://picsum.photos/seed/vase/500/500",
+    image: `${Ceramic1}`,
     category: "Decor",
     isNew: true,
   },
@@ -24,7 +36,7 @@ const newArrivals = [
     id: 2,
     name: "Oak Side Table",
     price: 120,
-    image: "https://picsum.photos/seed/table/500/500",
+    image: `${Oaktable1}`,
     category: "Furniture",
     isNew: true,
   },
@@ -32,7 +44,7 @@ const newArrivals = [
     id: 3,
     name: "Linen Throw",
     price: 65,
-    image: "https://picsum.photos/seed/linen/500/500",
+    image: `${Linenthrow1}`,
     category: "Textiles",
     isNew: true,
   },
@@ -40,7 +52,7 @@ const newArrivals = [
     id: 4,
     name: "Pendant Lamp",
     price: 89,
-    image: "https://picsum.photos/seed/lamp/500/500",
+    image: `${Pendantlamp1}`,
     category: "Lighting",
     isNew: true,
   },
@@ -52,7 +64,7 @@ const bestSellers = [
     name: "Wool Area Rug",
     price: 250,
     originalPrice: 300,
-    image: "https://picsum.photos/seed/rug/500/500",
+    image: `${Woolarearug}`,
     category: "Textiles",
     isSale: true,
   },
@@ -60,14 +72,14 @@ const bestSellers = [
     id: 6,
     name: "Modular Sofa",
     price: 850,
-    image: "https://picsum.photos/seed/sofa/500/500",
+    image: `${Modularsofa}`,
     category: "Furniture",
   },
   {
     id: 7,
     name: "Abstract Canvas",
     price: 150,
-    image: "https://picsum.photos/seed/art/500/500",
+    image: `${AbstractCanvas}`,
     category: "Decor",
   },
   {
@@ -75,7 +87,7 @@ const bestSellers = [
     name: "Floor Lamp",
     price: 110,
     originalPrice: 140,
-    image: "https://picsum.photos/seed/flamp/500/500",
+    image: `${FloorLamp}`,
     category: "Lighting",
     isSale: true,
   },
@@ -96,8 +108,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://picsum.photos/seed/modahero/1920/1080')",
+            backgroundImage: `url(${headimage})`,
           }}
         >
           <div className="absolute inset-0 bg-ink-900/60 backdrop-blur-sm"></div>
@@ -109,7 +120,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="text-primary-400 font-semibold tracking-widest uppercase mb-4"
           >
-            New Collection 2024
+            New Collection 2026
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -305,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-4">
         <div className="bg-primary-50 dark:bg-ink-700 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary-100 dark:bg-ink-600 rounded-full -translate-y-1/2 translate-x-1/2"></div>
           <div className="relative z-10">
@@ -333,7 +344,7 @@ export default function Home() {
               </button>
             </form>
           </div>
-        </div>``
+        </div>
       </section>
     </div>
   );
