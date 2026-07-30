@@ -28,14 +28,14 @@ export default function Contact() {
           {
             icon: Mail,
             title: "Email Us",
-            detail: "support@modastore.com",
+            detail: "gauravndeveloper90@gmail.com",
             sub: "We reply within 24 hours",
           },
           {
             icon: Phone,
             title: "Call Us",
-            detail: "+1 (555) 123-4567",
-            sub: "Mon-Fri, 9am to 6pm EST",
+            detail: "+91 70178 08671",
+            sub: "Mon-Fri, 10am to 6pm EST",
           },
           {
             icon: MapPin,

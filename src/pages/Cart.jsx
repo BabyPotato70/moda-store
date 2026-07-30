@@ -20,7 +20,7 @@ export default function Cart() {
           to="/shop"
           className="bg-primary-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-600 transition-colors"
         >
-          Continue Shopping
+          Add Items to Your Cart
         </Link>
       </div>
     );

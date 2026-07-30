@@ -271,7 +271,7 @@ export default function Home() {
             to="/shop"
             className="bg-ink-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-ink-800 transition-colors"
           >
-            Shop The Sale
+            Shop on Sale
           </Link>
         </div>
       </section>
