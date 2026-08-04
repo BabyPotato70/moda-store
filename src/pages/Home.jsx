@@ -17,10 +17,10 @@ import AbstractCanvas from "../assets/AbstractCanvas.jpg";
 import FloorLamp from "../assets/FloorLamp.jpg";
 // Mock Data
 const featuredCategories = [
-  { name: "Furniture", img: `${furniture1}` },
-  { name: "Lighting", img: `${Lighting1}` },
+  { name: "Furnitures", img: `${furniture1}` },
+  { name: "Lightings", img: `${Lighting1}` },
   { name: "Textiles", img: `${Texttiles1}` },
-  { name: "Decor", img: `${Decor1}` },
+  { name: "Decors", img: `${Decor1}` },
 ];
 
 const newArrivals = [
